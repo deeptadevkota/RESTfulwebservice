@@ -1,4 +1,6 @@
+using Azure.Storage.Queues;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace RESTWebApp.Controllers
 {
@@ -30,12 +32,16 @@ namespace RESTWebApp.Controllers
             .ToArray();
         }
 
-        [HttpPost(Name = "GetWeatherForecast")]
-        public void Post(WeatherForecast weather)
+        [HttpPost]
+        public async Task Post([FromBody]WeatherForecast weather)
         {
             Console.WriteLine($"POST method called {weather.AppID}, {weather.AppName}");
-
-            return;
+            var connectionString = "DefaultEndpointsProtocol=https;AccountName=sparklistenerpoc;AccountKey=mjBlWQWWLayGf/UghbddpYZUDnemnqjSJ+ypbIHYSYhi+uYjZrXSsihe97iEC9G/NlgVzia8Tarr+ASt+3aACA==;EndpointSuffix=core.windows.net";
+            var queueName = "callback-data";
+            var queueClient = new QueueClient(connectionString, queueName);
+            var message = JsonSerializer.Serialize(weather);
+            await queueClient.SendMessageAsync(message);
+   
         }
 
     }

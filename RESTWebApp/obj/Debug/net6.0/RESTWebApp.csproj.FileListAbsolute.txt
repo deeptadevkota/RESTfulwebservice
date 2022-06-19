@@ -25,3 +25,9 @@ C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\obj\Debug\net6.0\refint\RESTW
 C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\obj\Debug\net6.0\RESTWebApp.pdb
 C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\obj\Debug\net6.0\RESTWebApp.genruntimeconfig.cache
 C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\obj\Debug\net6.0\ref\RESTWebApp.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\Azure.Storage.Queues.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\System.IO.Hashing.dll
+C:\Users\Deepta\source\repos\RESTWebApp\RESTWebApp\bin\Debug\net6.0\System.Memory.Data.dll
