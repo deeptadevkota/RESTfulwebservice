@@ -21,13 +21,22 @@ namespace RESTWebApp.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            Console.WriteLine("GET method called");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                AppID = 1,
+                AppName = "DEMO-testing"
             })
             .ToArray();
         }
+
+        [HttpPost(Name = "GetWeatherForecast")]
+        public void Post(WeatherForecast weather)
+        {
+            Console.WriteLine($"POST method called {weather.AppID}, {weather.AppName}");
+
+            return;
+        }
+
     }
 }
