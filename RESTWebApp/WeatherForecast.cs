@@ -4,7 +4,7 @@ namespace RESTWebApp
     {
        
 
-        public int AppID { get; set; }
+        public string? AppID { get; set; }
 
         public string? AppName { get; set; }
 

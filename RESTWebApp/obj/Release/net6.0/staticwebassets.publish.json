@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7uXIzvEEFN3QLgbCNEr2Vi4xwcXnCfYq9FSXAJXD3PQ=",
+  "Source": "RESTWebApp",
+  "BasePath": "_content/RESTWebApp",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
